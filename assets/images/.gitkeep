@@ -1,0 +1,9 @@
+# Assets Images Folder
+
+Thư mục này dùng để lưu các ảnh assets cho ứng dụng.
+
+Ảnh của sinh viên sẽ được lưu tự động khi:
+- Chụp ảnh từ camera
+- Chọn ảnh từ thư viện
+
+Có thể thêm logo hoặc ảnh mặc định vào đây.
