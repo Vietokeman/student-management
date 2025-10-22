@@ -1,1 +1,22 @@
+# Mark the web output and static web assets as vendored so they don't count
+# toward repository language statistics (helps increase Dart percentage).
 web/** linguist-vendored
+
+# Hide common web front-end file types from language stats
+*.html linguist-vendored
+*.htm linguist-vendored
+*.css linguist-vendored
+*.js linguist-vendored
+
+# Ignore build artifacts and generated/native project files which may contain
+# many non-Dart files (gradle, Xcode project files, generated metadata etc.).
+android/** linguist-generated
+ios/** linguist-generated
+build/** linguist-generated
+.gradle/** linguist-generated
+
+# Explicitly mark the Dart source folder as Dart (optional, helps some tools)
+lib/** linguist-language=Dart
+
+# If you prefer to only hide html inside specific folders, replace the rules
+# above with more targeted patterns (for example: web/**, ios/**/Flutter/**/ephemeral/**, etc.).
